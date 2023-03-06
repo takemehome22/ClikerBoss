@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="🤡">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
     <title>CLOWN</title>
 </head>
@@ -17,50 +16,81 @@
     <audio id="audio_done" src="./src/peasantbuildingcomplete1.mp3"></audio>
     <div class="container_clown">
 
-        <div class="box_clown"><a class="clown" onclick="click_clown()" href="#">🤡</a>
-
+        <div id="futer">
+            <div id="money">0 💰</div>
+            <div id="waves">Волна 1</div>
         </div>
 
+        <a class="clown" onclick="click_clown()" href="#"> <img src="./src/img v2/Король слизней.png" alt=""
+                class="img"> </a>
         <div id="score">0</div>
-        <!-- <div class="magaz">
-            <button id="magaz">МАГАЗИН</button>
-        </div> -->
+
+
     </div>
 
     <div id="progressbar">
         <div></div>
-      </div> 
+    </div>
 
     <div class="con">
         <button id="continue">Продолжить</button>
     </div>
+
+
+
+
+
+
+
+
     <div class="menu">
         <div class="title">
             <h1>Покупочка</h1>
         </div>
         <div class="list_menu">
-            <ul>
-                <li class="1">
-                    <img src="./src/img/дубинка.jpg" alt="дубинка">
-                    <a>Описание типа дубинка</a>
+            <a href="#" onclick="copper_sword()">
+                <div>
+
+                    <img src="./src/img/медный меч.png" alt="дубинка">
+                    <a>Медный меч</a>
+                    <a id="count1">0</a>
                     <a>1 damage</a>
                     <a>100💰</a>
-                </li>
 
-                <li class="2">
+                </div>
+            </a>
+            <a href="#" onclick="mega_shark()">
+                <div>
 
-                    <img src="./src/img/палка.png" alt="палка">
-                    <a>Описание</a>
+                    <img src="./src/img/мега-акула.png" alt="палка">
+                    <a>Мега-акула</a>
+                    <a id="count2">0</a>
                     <a>15 damage</a>
                     <a>300💰</a>
-                </li>
-                <li class="3">
-                    <img src="./src/img/пистолет.png" alt="пистолет">
-                    <a>Описание</a>
+
+                </div>
+            </a>
+            <a href="#" onclick="zenith()">
+                <div>
+
+                    <img src="./src/img/зенит.png" alt="пистолет">
+                    <a>Зенит</a>
+                    <a id="count3">0</a>
                     <a>50 damage</a>
                     <a>800💰</a>
-                </li>
-            </ul>
+                </div>
+            </a>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 

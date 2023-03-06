@@ -1,12 +1,23 @@
+body {
+    width: 100%;
+}
+
 img {
     height: 200px;
     width: 234px;
     border-radius: 20px;
 }
 
+.img {
+    margin: auto;
+    width: 300px;
+    height: 200px;
+}
+
 .box_clown {
     text-align: center;
     height: 380px;
+    margin: 20px;
 }
 
 .main {
@@ -16,12 +27,11 @@ img {
 }
 
 .clown {
-    font-size: 300px;
     text-decoration: none;
 }
 
 .container_clown {
-    font-size: 50px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -48,7 +58,7 @@ img {
 
 a {
     margin: 20px;
-    font-size: 25px
+    font-size: 25px;
 }
 
 /* #magaz {
@@ -65,9 +75,13 @@ a {
 #continue {
     height: 44px;
     width: 194px;
-    background-color: rgb(24, 121, 151);
+    background-color: rgb(2, 135, 0);
     color: white;
     cursor: pointer;
+}
+
+.con {
+    margin: 20px;
 }
 
 /* типа ховер анимация */
@@ -77,26 +91,24 @@ a {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .title h1 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
     font-size: 40px;
     color: #fcfffc;
     margin-bottom: 50px;
 }
 
 .list_menu a {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 25px;
     color: #fcfffc;
-    border-left: 2px solid #F5B7C7;
     transition: 0.2s ease;
     padding-left: 5px;
 }
 
 .list_menu a:hover {
-    border-left: 2px solid #F5B7C7;
     transition: 0.2s ease;
     padding-left: 1px;
 }
@@ -118,7 +130,7 @@ a {
     border-right: 20px solid #20db20;
     background: linear-gradient(70deg, #0000ffa3, #ff5271db);
     position: absolute;
-    left: -710px;
+    left: -920px;
     transition: 0.6s ease;
 }
 
@@ -126,22 +138,28 @@ a {
     left: 0;
     transition: 0.5s ease;
 }
+
 #progressbar {
     background-color: black;
     margin: auto;
-    width: 1000px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
+    width: 500px;
     border-radius: 13px;
     padding: 3px;
-  }
-  
-  #progressbar>div {
+}
+
+#progressbar>div {
     background-color: orange;
-    width: 20%;
     height: 20px;
     border-radius: 10px;
-  }
-  
+}
+
+#score {
+    margin-bottom: 20px;
+}
+
+#futer {
+    display: flex;
+    gap: 80%;
+    height: 100px;
+    margin: 20px;
+}
