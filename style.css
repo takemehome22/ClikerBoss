@@ -3,32 +3,30 @@ body {
 }
 
 .img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
+}
 
+#sword {
+    width: 130px;
 }
 
 .main {
-    height: 2000px;
     background: #0F2027;
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
     text-align: center;
-    /* color: #fff;
+    color: #2d005b;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 20px rgb(162, 0, 255),
-        0 0 92px rgb(162, 0, 255),
-        0 0 50px rgb(162, 0, 255),
-        0 0 1px rgb(162, 0, 255); */
+        0 0 21px rgb(162, 0, 255);
 
 
 }
 
-.clown {
-    text-decoration: none;
+.con {
+    display: block;
 }
 
 .container_clown {
@@ -43,8 +41,9 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    background-color: rgb(39, 0, 53);
+    width: 500px;
+    height: 500px;
+    background-color: rgb(24, 0, 33);
     margin: 5px;
     padding: 20px;
     border-radius: 20px;
@@ -53,18 +52,27 @@ body {
 
 }
 
+.content1 :hover {
+    transition: 0.2s ease;
+    padding-top: 10px;
+}
+
 a {
-    margin: 5px;
+    margin: 9px;
     font-size: 25px;
     cursor: pointer;
+
 }
 
 #continue {
     height: 44px;
     width: 194px;
-    background-color: rgb(2, 135, 0);
-    color: white;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    color: rgb(61, 255, 2);
     cursor: pointer;
+    margin: 15px;
 }
 
 
@@ -81,21 +89,25 @@ a {
 .title h1 {
 
     font-size: 40px;
-    color: #fcfffc;
+    color: #2d005b;
     margin-bottom: 50px;
 }
 
 .list_menu a {
     font-size: 25px;
-    color: #fcfffc;
+    color: #2d005b;
     transition: 0.2s ease;
     padding-left: 5px;
 }
 
-/* .list_menu a:hover {
+.list_menu a:hover {
     transition: 0.2s ease;
     padding-left: 1px;
-} */
+}
+
+#money {
+    z-index: 1;
+}
 
 .tymbaumba {
     width: 200px;
@@ -106,7 +118,6 @@ a {
 }
 
 .list_menu {
-
     display: flex;
     align-items: center;
 }
@@ -114,10 +125,10 @@ a {
 .menu {
     width: 1000px;
     top: 0;
-    padding: 10px 95px;
+    padding: 10px 50px;
     background: rgba(58, 53, 66, 0.5);
     height: 100vh;
-    border-right: 20px solid #20db20;
+    border-right: 20px solid rgb(190, 190, 190, 0.3);
     background: linear-gradient(70deg, #0000ffa3, #ff5271db);
     position: absolute;
     left: -980px;
@@ -149,7 +160,7 @@ a {
 
 #futer {
     display: flex;
-    gap: 80%;
+    gap: 85%;
     height: 100px;
     margin: 20px;
 }
