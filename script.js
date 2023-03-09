@@ -50,6 +50,8 @@ function con() {
             score = maxhp;
             Score.innerHTML = score;
             Bar.style.width = 100 + '%';
+            Img.style.width=290+'px';
+            Img.style.height=200+'px';
 
         } else
             if (waves == 3) {
@@ -60,6 +62,8 @@ function con() {
                 score = maxhp;
                 Score.innerHTML = score;
                 Bar.style.width = 100 + '%';
+                Img.style.width=270+'px';
+                Img.style.height=185+'px';
 
             } else
                 if (waves == 4) {
@@ -70,6 +74,8 @@ function con() {
                     score = maxhp;
                     Score.innerHTML = score;
                     Bar.style.width = 100 + '%';
+                    Img.style.width=180+'px';
+                    Img.style.height=210+'px';
 
                 } else
                     if (waves == 5) {
@@ -80,6 +86,8 @@ function con() {
                         score = maxhp;
                         Score.innerHTML = score;
                         Bar.style.width = 100 + '%';
+                        Img.style.width=180+'px';
+                        Img.style.height=175+'px';
 
                     } else
                         if (waves == 6) {
@@ -90,6 +98,8 @@ function con() {
                             score = maxhp;
                             Score.innerHTML = score;
                             Bar.style.width = 100 + '%';
+                            Img.style.width=280+'px';
+                            Img.style.height=105+'px';
 
                         } else
                             if (waves == 7) {
@@ -100,18 +110,24 @@ function con() {
                                 score = maxhp;
                                 Score.innerHTML = score;
                                 Bar.style.width = 100 + '%';
+                                Img.style.width=340+'px';
+                                Img.style.height=205+'px';
 
                             } else {
-                                alert("Вы прошли игру харощ мужик");
+                                alert("Игра окончена");
                                 location.reload();
+                                Img.style.width=400+'px';
+                                Img.style.height=300+'px';
                                 return;
                             }
     audio_boss.play();
+    Con.className='con1';
 }
 
 function click_clown() {
+    
     if (score > 0) {
-
+        
         audio_atack.play();
         score -= click;
         if (score < 0) {
@@ -120,9 +136,16 @@ function click_clown() {
         Score.innerHTML = score;
         difference = ((score / maxhp) * 100);
         Bar.style.width = difference + '%';
+        
+    }
+    
+    if(!score==0){
+        Con.className='con1';
+
+    }else{
+        Con.className='con';
 
     }
-
 }
 
 // магазин
@@ -137,7 +160,6 @@ function copper_sword() {
         Money.innerHTML = money + "&nbsp;💰";
     }
 
-
 }
 
 function mega_shark() {
@@ -150,7 +172,6 @@ function mega_shark() {
         Money.innerHTML = money + "&nbsp;💰";
     }
 
-
 }
 
 function zenith() {
@@ -162,6 +183,5 @@ function zenith() {
         money -= 800;
         Money.innerHTML = money + "&nbsp;💰";
     }
-
 
 }

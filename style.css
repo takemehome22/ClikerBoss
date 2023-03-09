@@ -1,9 +1,10 @@
+
 body {
     width: 100%;
 }
 
 .img {
-    width: 400px;
+    width: 500px;
     height: 300px;
 }
 
@@ -16,17 +17,19 @@ body {
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
     text-align: center;
-    color: #2d005b;
+    color: #00628b;
     text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px rgb(162, 0, 255);
+
+        0 0 21px rgb(40, 9, 219);
 
 
 }
 
 .con {
     display: block;
+}
+.con1{
+    display: none;
 }
 
 .container_clown {
@@ -43,11 +46,13 @@ body {
     flex-direction: column;
     width: 500px;
     height: 500px;
-    background-color: rgb(24, 0, 33);
+    background-color: #0f2027d9;
     margin: 5px;
     padding: 20px;
     border-radius: 20px;
-    border: 3px solid rgb(100, 2, 2);
+    border: 3px solid #00628bd9;
+    align-items: center;
+    justify-content: start;
 
 
 }
@@ -67,10 +72,9 @@ a {
 #continue {
     height: 44px;
     width: 194px;
-    background: #0F2027;
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    color: rgb(61, 255, 2);
+    background: rgb(65, 156, 38);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
     cursor: pointer;
     margin: 15px;
 }
@@ -89,13 +93,13 @@ a {
 .title h1 {
 
     font-size: 40px;
-    color: #2d005b;
+    color: #00628b;
     margin-bottom: 50px;
 }
 
 .list_menu a {
     font-size: 25px;
-    color: #2d005b;
+    color: #00628b;
     transition: 0.2s ease;
     padding-left: 5px;
 }
@@ -107,6 +111,7 @@ a {
 
 #money {
     z-index: 1;
+    color: #000000;
 }
 
 .tymbaumba {
@@ -126,10 +131,9 @@ a {
     width: 1000px;
     top: 0;
     padding: 10px 50px;
-    background: rgba(58, 53, 66, 0.5);
+    background: #2c53647a;
     height: 100vh;
     border-right: 20px solid rgb(190, 190, 190, 0.3);
-    background: linear-gradient(70deg, #0000ffa3, #ff5271db);
     position: absolute;
     left: -980px;
     transition: 0.6s ease;
