@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="🤡">
     <link rel="stylesheet" href="./style.css">
-    <title>CLOWN</title>
+    <title>типа террария</title>
 </head>
 
 <body class="main">
-    <audio id="audio" src="./src/axemediumchopwood2.mp3"></audio>
-    <audio id="audio_money" src="./src/necromancernogold1.mp3"></audio>
-    <audio id="audio_done" src="./src/peasantbuildingcomplete1.mp3"></audio>
+    <audio id="boss" src="./src/sound/появление босса.mp3"></audio>
+    <audio id="audio_money" src="./src/sound/звук покупки.mp3"></audio>
+    <audio id="audio_atack" src="./src/sound/звук удара.mp3"></audio>
     <div class="container_clown">
 
         <div id="futer">
@@ -21,19 +21,22 @@
             <div id="waves">Волна 1</div>
         </div>
 
-        <a class="clown" onclick="click_clown()" href="#"> <img src="./src/img v2/Король слизней.png" alt=""
-                class="img"> </a>
-        <div id="score">0</div>
+        <a class="clown" onclick="click_clown()">
+
+            <img src="./src/img v2/Король слизней.png" alt="" class="img">
+        </a>
+
+        <div id="score">100</div>
 
 
     </div>
 
     <div id="progressbar">
-        <div></div>
+        <div id="bar"></div>
     </div>
 
     <div class="con">
-        <button id="continue">Продолжить</button>
+        <button id="continue" onclick="con()">Продолжить</button>
     </div>
 
 
@@ -48,48 +51,35 @@
             <h1>Покупочка</h1>
         </div>
         <div class="list_menu">
-            <a href="#" onclick="copper_sword()">
-                <div>
 
-                    <img src="./src/img/медный меч.png" alt="дубинка">
-                    <a>Медный меч</a>
-                    <a id="count1">0</a>
-                    <a>1 damage</a>
-                    <a>100💰</a>
+            <div class="content 1" onclick="copper_sword()">
+                <div class="tymbaumba"> <img src=" ./src/img/медный меч.png" alt="дубинка"></div>
 
-                </div>
-            </a>
-            <a href="#" onclick="mega_shark()">
-                <div>
+                <a>Медный меч</a>
+                <a id="count1">у вас 0 мечей</a>
+                <a>1 damage</a>
+                <a>100💰</a>
 
-                    <img src="./src/img/мега-акула.png" alt="палка">
-                    <a>Мега-акула</a>
-                    <a id="count2">0</a>
-                    <a>15 damage</a>
-                    <a>300💰</a>
+            </div>
 
-                </div>
-            </a>
-            <a href="#" onclick="zenith()">
-                <div>
+            <div class="content 2" onclick="mega_shark()">
+                <div class="tymbaumba"> <img src="./src/img/мега-акула.png" alt="палка"></div>
 
-                    <img src="./src/img/зенит.png" alt="пистолет">
-                    <a>Зенит</a>
-                    <a id="count3">0</a>
-                    <a>50 damage</a>
-                    <a>800💰</a>
-                </div>
-            </a>
+                <a>Мега-акула</a>
+                <a id="count2">у вас 0 мега-акул</a>
+                <a>15 damage</a>
+                <a>300💰</a>
 
+            </div>
 
+            <div class="content 3" onclick="zenith()">
+                <div class="tymbaumba"> <img src="./src/img/зенит.png" alt="пистолет"></div>
 
-
-
-
-
-
-
-
+                <a>Зенит</a>
+                <a id="count3"> у вас 0 зенитов</a>
+                <a>50 damage</a>
+                <a>800💰</a>
+            </div>
 
         </div>
     </div>
